@@ -1,0 +1,120 @@
+<div id="app"></div>
+<div id="app"></div>
+<html>
+<head>
+  <title>My Calculator</title>
+  <style type="text/css">
+  input{
+    border-radius:10px;
+  
+  }
+  td{
+padding:5px 5px 5px 5px ;
+  }
+  .iblh {
+    font-size:25pt;
+    background-color : azure;
+    color : navy ;
+    border : 1px solid black ;
+    font-family:impact;
+    text-align:center;
+ 
+  }
+  .lblh{
+    font-family : Cursive;
+    font-weight: bold ;
+    font-size: 15pt;
+  }
+  .txt{
+    font-size:15pt;
+    color: red;
+    font-weight: bold ;
+    text-align: center;
+    border : 1px solid gray;
+    font-family: Fantasy;
+  }
+  .btn{
+    background-color:lightblue;
+    color: black;
+    width : 40px;
+    border:white;
+    cursor : hand ;
+  }
+  
+  </style>
+  
+
+</head>
+<body>
+  <table align="center">
+  <tr>
+    <td colspan="2" align="center">
+      <div class="iblh">MyCalculator </div>
+    </td>
+  </tr>
+  <tr>
+   <td>
+     <label class="lblh"> Number 1 : </label>
+     </td>
+     <td>
+     <input id="txtnum1" class="txt" type="text" />
+     </td>
+   
+  </tr>
+  <tr>
+    <td>
+      <label class="lblh"> Number 2 : </label>
+    </td>
+    <td>
+    <input id="txtnum2" class="txt" type="text" />
+    </td>
+
+  </tr>
+  <tr>
+   <td colspan="2" align="center">
+     <table>
+     <tr>
+       <td>
+         <input class="btn" type="button" value="+" onclick ="calc('a');"/>
+        
+       </td>
+       <td>
+         <input class="btn" type="button" value="-" />
+       </td>
+       <td>
+         <input class="btn" type="button" value="x" />
+       </td>
+       <td>
+         <input class="btn" type="button" value="/" />
+       </td>
+     </tr>
+   </table>
+
+   </td>
+   
+
+  </tr>
+  <tr>
+    <td colspan="2" align="center" />
+        <label id="result" style="font-size:30pt; font-weidth : bold">0</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left">
+    <input class="btn " style="background : pink ;" style="border : black" type="button" value="Exit" />
+    </td>
+  </tr> 
+  </table>
+
+</body>
+<script>
+  function calc(op)
+ if (op == 'a' )
+   window.result.innerHTML = eval(window.txtnum1.value) + eval(window.txtnum2.value) ;
+ 
+
+  </script>
+
+
+
+</html>
